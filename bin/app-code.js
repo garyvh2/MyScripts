@@ -10,7 +10,7 @@ module.exports = function (comm) {
         .action(function (directory, opts) {
             let cmd = 'code ';
             // Add directory
-            cmd += directory ? "'" + directory + "'" : '.';
+            cmd += directory ? '"' + directory + '"' : '.';
             // Add params
             cmd += opts && opts.new ? "" : " --add";
             
